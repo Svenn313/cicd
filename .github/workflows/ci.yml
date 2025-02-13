@@ -1,0 +1,14 @@
+name: Pipeline CI/CD unittest
+on:
+    push:
+        branches:
+        - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: launch test
+              uses: actions/checkout@v2
+        with:
+            - run : ./testCalc.py

@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 
 def addition(a,b):
-    print(a+b)
+    return(a+b)
 
 def soustraction(a,b):
-    print(a-b)
+    return(a-b)
 
 def multiplication(a,b):
-    print(a*b)
+    return(a*b)
 
 def division(a,b):
-    print(a//b)
+    if b == 0:
+        raise ValueError("Division par zéro impossible")
+    return(a/b)
